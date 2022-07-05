@@ -1,0 +1,65 @@
+.colorpickerjs {
+    display: inline-block;
+    height: 40px;
+    margin: 6px;
+    outline: 6px solid #0004;
+    cursor: pointer;
+    background-color: black;
+    transition: outline 0.2s ease-out;
+}
+
+.colorpickerjs[shape="circle"] {
+    width: 40px;
+    border-radius: 50%;
+}
+.colorpickerjs[shape="square"] {
+    width: 40px;
+}
+.colorpickerjs[shape="rectangle"] {
+    width: 100px;
+    background-color: black;
+}
+
+.colorpickerjs:hover {
+    outline: 3px solid #0004;
+}
+
+.colorpickerwindow {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 2px;
+    top: 70px;
+    left: 20px;
+    padding: 25px;
+    user-select: none;
+}
+.colorpickerwindow .colorpickersquare {
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    position: relative;
+    display: inline-block;
+}
+.colorpickerwindow .colorpickersquare img {
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+.colorpickerwindow .colorpickersquare .colorpickerdot {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+.colorpickermenu {
+    display: inline-block;
+    width: 240px;
+    vertical-align: top;
+}
+.colorpickerslider {
+    vertical-align: top;
+}

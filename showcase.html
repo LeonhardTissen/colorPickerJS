@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>colorPickerJS</title>
+	<link rel="stylesheet" href="colorpicker.css">
+</head>
+<body style="background-color: #AAA">
+	<div class="colorpickerjs" value="#FF0000" shape="circle"></div>
+	<div class="colorpickerjs" value="#FF0000" shape="square"></div>
+	<div class="colorpickerjs" value="#FF0000" shape="rectangle"></div>
+
+	<div class="colorpickerwindow">
+		<div class="colorpickersquare" onmousedown="adjustColorPickerDot(event);">
+			<img src="hue.png">
+			<div class="colorpickerdot"></div>
+		</div>
+		<div class="colorpickermenu">
+			<input type="range" class="colorpickerslider">
+			<input type="range" class="colorpickerslider">
+			<input type="range" class="colorpickerslider">
+			<input type="range" class="colorpickerslider">
+		</div>
+	</div>
+
+	<script src="colorpicker.js"></script>
+</body>
+</html>
